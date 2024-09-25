@@ -12,7 +12,7 @@
     <header class="header">
       <a class="header__logo">
         <img class="header__logo-image" src="./images/m4d-256.svg" alt="Логотип">
-        <h1 class="header__logo-text">Электронная<br>доверенность</h1>
+        <h1 class="header__logo-text">Доверенность</h1>
       </a>
       <!-- <search class="header__search-container">
         <form class="header__search-form">
@@ -25,19 +25,19 @@
 
     <main class="main">
       <div class="main__description-container">
-        <p class="main__description-accent">МЧД — машиночитаемая доверенность</p>
+        <p class="main__description-title">МЧД — машиночитаемая доверенность</p>
         <p class="main__description">
-          Это электронная форма бумажной доверенности, подписанная квалифицированной электронной подписью руководителя организации или индивидуального предпринимателя.
+          Это электронная форма бумажной доверенности,
+          подписанная квалифицированной электронной подписью
+          руководителя организации или индивидуального предпринимателя.
         </p>
       </div>
       <!-- Контейнер -->
       <button class="main__service" type="button" onclick="window.egais.showModal()">
-        <div class="main__service-description-container">
-          <h2 class="main__service-title">ЕГАИС</h2>
-        </div>
-        <svg class="main__service-image" width="32" height="32" viewBox="0 0 32 32" fill="black" xmlns="http://www.w3.org/2000/svg">
+        <h2 class="main__service-title">ЕГАИС</h2>
+        <!-- <svg class="main__service-image" width="32" height="32" viewBox="0 0 32 32" fill="black" xmlns="http://www.w3.org/2000/svg">
           <path d="M23.5835 24.9977C23.5559 24.9992 23.528 25 23.5 25H10.5C9.94771 25 9.5 25.4477 9.5 26C9.5 26.5523 9.94771 27 10.5 27H23.5C25.433 27 27 25.433 27 23.5V10.5C27 9.9477 26.5523 9.49999 26 9.49999C25.4477 9.49999 25 9.9477 25 10.5V23.5C25 23.528 24.9992 23.5558 24.9977 23.5835L7.20711 5.79288C6.81658 5.40235 6.18342 5.40235 5.79289 5.79288C5.40237 6.1834 5.40237 6.81657 5.79289 7.20709L23.5835 24.9977Z"/>
-        </svg>
+        </svg> -->
       </button>
       <dialog class="main__dialog" id="egais" aria-label="Описание">
         <div class="main__dialog-container">
@@ -58,9 +58,6 @@
       <!-- Контейнер -->
       <button class="main__service" type="button" onclick="window.edo.showModal()">
         <h2 class="main__service-title">ЭДО</h2>
-        <svg class="main__service-image" width="32" height="32" viewBox="0 0 32 32" fill="black" xmlns="http://www.w3.org/2000/svg">
-          <path d="M23.5835 24.9977C23.5559 24.9992 23.528 25 23.5 25H10.5C9.94771 25 9.5 25.4477 9.5 26C9.5 26.5523 9.94771 27 10.5 27H23.5C25.433 27 27 25.433 27 23.5V10.5C27 9.9477 26.5523 9.49999 26 9.49999C25.4477 9.49999 25 9.9477 25 10.5V23.5C25 23.528 24.9992 23.5558 24.9977 23.5835L7.20711 5.79288C6.81658 5.40235 6.18342 5.40235 5.79289 5.79288C5.40237 6.1834 5.40237 6.81657 5.79289 7.20709L23.5835 24.9977Z"/>
-        </svg>
       </button>
       <dialog class="main__dialog" id="edo" aria-label="Описание">
         <div class="main__dialog-container">
@@ -78,9 +75,6 @@
       <!-- Контейнер -->
       <button class="main__service" type="button" onclick="window.etp.showModal()">
         <h2 class="main__service-title">ЕИС</h2>
-        <svg class="main__service-image" width="32" height="32" viewBox="0 0 32 32" fill="black" xmlns="http://www.w3.org/2000/svg">
-          <path d="M23.5835 24.9977C23.5559 24.9992 23.528 25 23.5 25H10.5C9.94771 25 9.5 25.4477 9.5 26C9.5 26.5523 9.94771 27 10.5 27H23.5C25.433 27 27 25.433 27 23.5V10.5C27 9.9477 26.5523 9.49999 26 9.49999C25.4477 9.49999 25 9.9477 25 10.5V23.5C25 23.528 24.9992 23.5558 24.9977 23.5835L7.20711 5.79288C6.81658 5.40235 6.18342 5.40235 5.79289 5.79288C5.40237 6.1834 5.40237 6.81657 5.79289 7.20709L23.5835 24.9977Z"/>
-        </svg>
       </button>
       <dialog class="main__dialog" id="etp" aria-label="Описание">
         <div class="main__dialog-container">
@@ -108,9 +102,6 @@
       <!-- Контейнер -->
       <button class="main__service" type="button" onclick="window.chz.showModal()">
         <h2 class="main__service-title">ЧЕСТНЫЙ ЗНАК</h2>
-        <svg class="main__service-image" width="32" height="32" viewBox="0 0 32 32" fill="black" xmlns="http://www.w3.org/2000/svg">
-          <path d="M23.5835 24.9977C23.5559 24.9992 23.528 25 23.5 25H10.5C9.94771 25 9.5 25.4477 9.5 26C9.5 26.5523 9.94771 27 10.5 27H23.5C25.433 27 27 25.433 27 23.5V10.5C27 9.9477 26.5523 9.49999 26 9.49999C25.4477 9.49999 25 9.9477 25 10.5V23.5C25 23.528 24.9992 23.5558 24.9977 23.5835L7.20711 5.79288C6.81658 5.40235 6.18342 5.40235 5.79289 5.79288C5.40237 6.1834 5.40237 6.81657 5.79289 7.20709L23.5835 24.9977Z"/>
-        </svg>
       </button>
       <dialog class="main__dialog" id="chz" aria-label="Описание">
         <div class="main__dialog-container">
@@ -128,9 +119,6 @@
       <!-- Контейнер -->
       <button class="main__service" type="button" onclick="window.fts.showModal()">
         <h2 class="main__service-title">ФТС</h2>
-        <svg class="main__service-image" width="32" height="32" viewBox="0 0 32 32" fill="black" xmlns="http://www.w3.org/2000/svg">
-          <path d="M23.5835 24.9977C23.5559 24.9992 23.528 25 23.5 25H10.5C9.94771 25 9.5 25.4477 9.5 26C9.5 26.5523 9.94771 27 10.5 27H23.5C25.433 27 27 25.433 27 23.5V10.5C27 9.9477 26.5523 9.49999 26 9.49999C25.4477 9.49999 25 9.9477 25 10.5V23.5C25 23.528 24.9992 23.5558 24.9977 23.5835L7.20711 5.79288C6.81658 5.40235 6.18342 5.40235 5.79289 5.79288C5.40237 6.1834 5.40237 6.81657 5.79289 7.20709L23.5835 24.9977Z"/>
-        </svg>
       </button>
       <dialog class="main__dialog" id="fts" aria-label="Описание">
         <div class="main__dialog-container">
