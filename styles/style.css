@@ -73,7 +73,7 @@
   padding: 12px;
   font-size: 16px;
   background-color: #f5f5f5;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .header__search-button:hover {
@@ -124,7 +124,7 @@
   color: #000;
   text-align: start;
   background-color: #fff;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.15s ease-in-out;
   cursor: pointer;
 }
 
@@ -137,7 +137,7 @@
 
 .main__service-image {
   align-self: flex-end;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.15s ease-in-out;
   inline-size: 32px;
   block-size: 32px;
 }
@@ -186,7 +186,7 @@
   border: 2px solid #000;
   border-radius: 12px;
   padding: 24px;
-  animation: appear 0.3s ease-in-out;
+  animation: appear 0.15s ease-in-out;
 }
 
 @keyframes appear {
@@ -233,15 +233,18 @@
 }
 
 .main__dialog-text-link {
-  color: #0077ff;
+  color: #fff;
+  background-color: #000;
+  padding: 2px 6px;
+  border-radius: 4px;
   font-weight: 600;
   text-decoration: none;
   text-underline-offset: 4px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .main__dialog-text-link:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .main__dialog-button {
@@ -252,7 +255,7 @@
   font-weight: 500;
   font-size: 16px;
   background-color: white;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .main__dialog-button:hover {
@@ -273,7 +276,7 @@
 .footer__phone-number {
   text-decoration: none;
   text-underline-offset: 4px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .footer__phone-number:hover {
