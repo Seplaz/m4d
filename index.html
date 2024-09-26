@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./images/m4d-256.svg" type="image/x-icon">
-    <title>Электронная доверенность</title>
+    <title>Доверенность</title>
   </head>
   <body class="page">
     <header class="header">
@@ -20,123 +20,39 @@
           <button class="header__search-button">Найти</button>
         </form>
       </search> -->
-      <!-- <a class="header__phone-number" href="tel:+73952767600">+7 (3952) 76-76-00</a> -->
     </header>
 
     <main class="main">
       <div class="main__description-container">
         <p class="main__description-title">МЧД — машиночитаемая доверенность</p>
-        <p class="main__description">
-          Это электронная форма бумажной доверенности,
-          подписанная квалифицированной электронной подписью
-          руководителя организации или индивидуального предпринимателя.
-        </p>
+        <p class="main__description"> Это электронная форма бумажной доверенности, подписанная квалифицированной электронной подписью руководителя организации или индивидуального предпринимателя.</p>
       </div>
       <!-- Контейнер -->
       <button class="main__service" type="button" onclick="window.egais.showModal()">
-        <h2 class="main__service-title">ЕГАИС</h2>
-        <!-- <svg class="main__service-image" width="32" height="32" viewBox="0 0 32 32" fill="black" xmlns="http://www.w3.org/2000/svg">
+        <h2 class="main__service-title">егаис</h2>
+        <svg class="main__service-image" width="32" height="32" viewBox="0 0 32 32" fill="black" xmlns="http://www.w3.org/2000/svg">
           <path d="M23.5835 24.9977C23.5559 24.9992 23.528 25 23.5 25H10.5C9.94771 25 9.5 25.4477 9.5 26C9.5 26.5523 9.94771 27 10.5 27H23.5C25.433 27 27 25.433 27 23.5V10.5C27 9.9477 26.5523 9.49999 26 9.49999C25.4477 9.49999 25 9.9477 25 10.5V23.5C25 23.528 24.9992 23.5558 24.9977 23.5835L7.20711 5.79288C6.81658 5.40235 6.18342 5.40235 5.79289 5.79288C5.40237 6.1834 5.40237 6.81657 5.79289 7.20709L23.5835 24.9977Z"/>
-        </svg> -->
+        </svg>
       </button>
+
       <dialog class="main__dialog" id="egais" aria-label="Описание">
         <div class="main__dialog-container">
-          <div class="main__dialog-container-text">
-            <h3 class="main__dialog-title">МЧД для Росалкогольрегулирования</h3>
-            <p class="main__dialog-text">
-              Такую МЧД можно сделать в <a class="main__dialog-text-link" href="https://m4d.kontur.ru/" target="_blank">Контур доверенности</a> или на <a class="main__dialog-text-link" href="https://m4d.nalog.gov.ru/" target="_blank">портале ФНС</a>
-            </p>
-            <p class="main__dialog-text">
-              Стоимость 1000 руб.<br>
-              Если вместе с доверенностью требуется RSA ключ, стоимость составит 1500 руб.
-            </p>
+          <span class="main__dialog-title">МЧД для Росалкогольрегулирования</span>
+          <div class="main__dialog-text-container">
+            <span class="main__dialog-text">Доверенность можно сформировать через <a class="main__dialog-text-link" href="https://m4d.kontur.ru/">Контур.Доверенность</a> или <a class="main__dialog-text-link" href="https://m4d.nalog.gov.ru/">Портал ФНС</a></span>
+            <span class="main__dialog-text">Стоимость: 1000 руб.</span>
+            <span class="main__dialog-text">Вместе с формированием доверенности может потребоваться запись RSA ключа, в таком случае стоимость составит 1500 руб.</span>
           </div>
           <button class="main__dialog-button" type="button" onclick="window.egais.close()">Закрыть</button>
         </div>
       </dialog>
       <!-- Конец контейнера -->
-      <!-- Контейнер -->
-      <button class="main__service" type="button" onclick="window.edo.showModal()">
-        <h2 class="main__service-title">ЭДО</h2>
-      </button>
-      <dialog class="main__dialog" id="edo" aria-label="Описание">
-        <div class="main__dialog-container">
-          <div class="main__dialog-container-text">
-            <h3 class="main__dialog-title">МЧД для Электронного документооборота</h3>
-            <p class="main__dialog-text">
-              Такую МЧД можно сделать в <a class="main__dialog-text-link" href="https://m4d.kontur.ru/" target="_blank">Контур доверенности</a> или на <a class="main__dialog-text-link" href="https://m4d.nalog.gov.ru/" target="_blank">портале ФНС</a>
-            </p>
-            <p class="main__dialog-text">Стоимость 1000 руб.</p>
-          </div>
-          <button class="main__dialog-button" type="button" onclick="window.edo.close()">Закрыть</button>
-        </div>
-      </dialog>
-      <!-- Конец контейнера -->
-      <!-- Контейнер -->
-      <button class="main__service" type="button" onclick="window.etp.showModal()">
-        <h2 class="main__service-title">ЕИС</h2>
-      </button>
-      <dialog class="main__dialog" id="etp" aria-label="Описание">
-        <div class="main__dialog-container">
-          <div class="main__dialog-container-text">
-            <h3 class="main__dialog-title">МЧД для ЕИС и Электронных торговых площадок</h3>
-            <p class="main__dialog-text">
-              Такую МЧД можно сделать на <a class="main__dialog-text-link" href="https://zakupki.gov.ru/" target="_blank">портале ЕИС</a><br>
-              Создается в личном кабинете 44-ФЗ или 223-ФЗ для заказчика и в личном кабинете Участника закупок для исполнителя<br>
-              МЧД из ЕИС распространяется на несколько Федеральных торговых площадок, таких как:
-            </p>
-            <ul>
-              <li>Сбербанк-АСТ (sberbank-ast.ru)</li>
-              <li>Росэлторг (roseltorg.ru)</li>
-              <li>РТС-тендер (rts-tender.ru)</li>
-              <li>Национальная электронная площадка (etp-ets.ru)</li>
-              <li>ЭТП ГПБ Электронная торговая площадка Газпромбанка (etpgpb.ru)</li>
-              <li>ЭТП ТЭК-Торг (tektorg.ru)</li>
-            </ul>
-            <p class="main__dialog-text">Стоимость 1000 руб.</p>
-          </div>
-          <button class="main__dialog-button" type="button" onclick="window.etp.close()">Закрыть</button>
-        </div>
-      </dialog>
-      <!-- Конец контейнера -->
-      <!-- Контейнер -->
-      <button class="main__service" type="button" onclick="window.chz.showModal()">
-        <h2 class="main__service-title">ЧЕСТНЫЙ ЗНАК</h2>
-      </button>
-      <dialog class="main__dialog" id="chz" aria-label="Описание">
-        <div class="main__dialog-container">
-          <div class="main__dialog-container-text">
-            <h3 class="main__dialog-title">МЧД для работы на портале Честный Знак</h3>
-            <p class="main__dialog-text">
-              Такую МЧД можно сделать только на <a class="main__dialog-text-link" href="https://честныйзнак.рф/" target="_blank">портале Честный знак</a><br>
-            </p>
-            <p class="main__dialog-text">Стоимость 1000 руб.</p>
-          </div>
-          <button class="main__dialog-button" type="button" onclick="window.chz.close()">Закрыть</button>
-        </div>
-      </dialog>
-      <!-- Конец контейнера -->
-      <!-- Контейнер -->
-      <button class="main__service" type="button" onclick="window.fts.showModal()">
-        <h2 class="main__service-title">ФТС</h2>
-      </button>
-      <dialog class="main__dialog" id="fts" aria-label="Описание">
-        <div class="main__dialog-container">
-          <div class="main__dialog-container-text">
-            <h3 class="main__dialog-title">МЧД для работы с Федеральной таможенной службой</h3>
-            <p class="main__dialog-text">
-              Такую МЧД можно сделать в <a class="main__dialog-text-link" href="https://m4d.kontur.ru/" target="_blank">Контур доверенности</a> или на <a class="main__dialog-text-link" href="https://m4d.nalog.gov.ru/" target="_blank">портале ФНС</a>
-            </p>
-            <p class="main__dialog-text">Стоимость 1000 руб.</p>
-          </div>
-          <button class="main__dialog-button" type="button" onclick="window.fts.close()">Закрыть</button>
-        </div>
-      </dialog>
-      <!-- Конец контейнера -->
     </main>
     <footer class="footer">
-      <p>ЗАО "Контур-Иркутск"</p>
-      <p>г. Иркутск, ул. Цесовская набережная, д. 6</p>
+      <span class="footer__text footer__company-name">ЗАО "Контур-Иркутск"</span>
+      <span class="footer__text">г. Иркутск, ул. Цесовская набережная, д. 6</span>
+      <a class="footer__text footer__phone-number" href="tel:+73952767600">+7 (3952) 76-76-00</a>
     </footer>
+    <script src="./script/main.js"></script>
   </body>
 </html>

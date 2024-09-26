@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .page {
-
   display: grid;
   grid: 0.2fr 2fr 0.2fr / 1fr;
   grid-template-areas:
@@ -26,7 +25,6 @@
   gap: 24px;
   border-block-end: 2px solid #f5f5f5;
   padding: 24px;
-
 }
 
 .header__logo {
@@ -84,22 +82,11 @@
   cursor: pointer;
 }
 
-.header__phone-number {
-  font-size: 16px;
-  text-decoration: none;
-  text-underline-offset: 4px;
-  transition: all 0.3s ease-in-out;
-}
-
-.header__phone-number:hover {
-  text-decoration: underline;
-}
-
 .main {
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 auto;
-  /* align-content: start; */
+  align-content: start;
   gap: 24px;
   padding: 24px;
 }
@@ -113,26 +100,16 @@
 .main__description-title {
   font-weight: 500;
   font-size: 48px;
+  line-height: 1.5;
 }
 
 .main__description {
   font-weight: 300;
   font-size: 24px;
-}
-
-@media (max-width: 768px) {
-
-  .main__description-title {
-    font-size: 24px;
-  }
-
-  .main__description {
-    font-size: 16px;
-  }
-
-  .main__service-title {
-    font-size: 24px;
-  }
+  line-height: 1.5;
+  word-break: break-word;
+  text-wrap: balance;
+  white-space: pre-line;
 }
 
 .main__service {
@@ -140,6 +117,7 @@
   flex: 1 1 auto;
   justify-content: space-between;
   align-items: start;
+  gap: 24px;
   border: 2px solid #000;
   border-radius: 12px;
   padding: 24px;
@@ -153,11 +131,15 @@
 .main__service-title {
   font-weight: 200;
   font-size: 48px;
+  line-height: 1.5;
+  text-transform: uppercase;
 }
 
 .main__service-image {
   align-self: flex-end;
   transition: all 0.3s ease-in-out;
+  inline-size: 32px;
+  block-size: 32px;
 }
 
 .main__service:hover {
@@ -166,7 +148,6 @@
 
 .main__service:hover>.main__service-image {
   fill: white;
-  scale: 1.2;
   rotate: -45deg;
 }
 
@@ -193,7 +174,6 @@
 
 .main__service:hover:nth-child(8)>.main__service-image {
   fill: #000;
-  scale: 1.2;
   rotate: -45deg;
 }
 
@@ -227,16 +207,29 @@
   gap: 24px;
 }
 
-.main__dialog-container-text {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  font-weight: 400;
-  line-height: 28px;
-}
-
 .main__dialog-title {
   font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.main__dialog-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.main__dialog-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-wrap: balance;
+  white-space: pre-line;
+}
+
+.main__dialog-text-accent {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .main__dialog-text-link {
@@ -252,11 +245,13 @@
 }
 
 .main__dialog-button {
-  border: none;
+  align-self: center;
+  border: 2px solid black;
   border-radius: 12px;
   padding: 12px;
+  font-weight: 500;
   font-size: 16px;
-  background-color: #f5f5f5;
+  background-color: white;
   transition: all 0.3s ease-in-out;
 }
 
@@ -271,10 +266,58 @@
   grid-area: footer;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
   border-block-start: 2px solid #f5f5f5;
   padding: 24px;
-  font-weight: 500;
+}
 
-  font-size: 14px;
+.footer__phone-number {
+  text-decoration: none;
+  text-underline-offset: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__phone-number:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: center;
+  }
+
+  .main__description-title {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .main__description {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .main__service-title {
+    font-weight: 300;
+    font-size: 36px;
+  }
+
+  .main__dialog-title {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .main__dialog-text {
+    font-size: 14px;
+  }
+
+  .main__dialog-button {
+    align-self: stretch;
+    font-size: 14px;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    font-size: 12px;
+  }
 }
