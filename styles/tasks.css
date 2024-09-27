@@ -74,6 +74,7 @@
 
 .main {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   flex: 1 1 auto;
   align-content: start;
@@ -102,152 +103,40 @@
   white-space: pre-line;
 }
 
-.main__service {
+.main__tasks-container {
   display: flex;
   flex: 1 1 auto;
-  justify-content: space-between;
-  align-items: start;
-  gap: 24px;
-  border: 2px solid #000;
-  border-radius: 12px;
-  padding: 24px;
-  color: #000;
-  text-align: start;
-  background-color: #fff;
-  transition: all 0.15s ease-in-out;
-  cursor: pointer;
 }
 
-.main__service-title {
-  font-weight: 200;
-  font-size: 48px;
-  line-height: 1.5;
-  text-transform: uppercase;
-}
-
-.main__service-image {
-  align-self: flex-end;
-  transition: all 0.15s ease-in-out;
-  inline-size: 32px;
-  block-size: 32px;
-}
-
-.main__service:hover {
-  color: #fff;
-}
-
-.main__service:hover>.main__service-image {
-  fill: white;
-  rotate: -45deg;
-}
-
-.main__service:hover:nth-child(2) {
-  border-color: var(--color-egais);
-  background-color: var(--color-egais);
-}
-
-.main__service:hover:nth-child(4) {
-  border-color: var(--color-edo);
-  background-color: var(--color-edo);
-}
-
-.main__service:hover:nth-child(6) {
-  border-color: var(--color-eis);
-  background-color: var(--color-eis);
-}
-
-.main__service:hover:nth-child(8) {
-  border-color: var(--color-chesznak);
-  color: #000;
-  background-color: var(--color-chesznak);
-}
-
-.main__service:hover:nth-child(8)>.main__service-image {
-  fill: #000;
-  rotate: -45deg;
-}
-
-.main__service:hover:nth-child(10) {
-  border-color: var(--color-fts);
-  background-color: var(--color-fts);
-}
-
-.main__dialog {
-  border: 2px solid #000;
-  border-radius: 12px;
-  padding: 24px;
-  animation: appear 0.15s ease-in-out;
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-    scale: 0;
-  }
-
-  to {
-    opacity: 1;
-    scale: 1;
-  }
-}
-
-.main__dialog-container {
+.main__tasks-input-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.main__dialog-title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.5;
+.main__tasks-input {
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: #f6f6f6;
 }
 
-.main__dialog-text-container {
+.main__tasks-input::placeholder {
+  color: #adadad;
+  font-size: 14px;
+}
+
+.main__tasks-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.main__dialog-text {
-  font-size: 16px;
-  line-height: 1.5;
-  text-wrap: balance;
-  white-space: pre-line;
-}
-
-.main__dialog-text-accent {
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.main__dialog-text-link {
-  font-weight: 600;
-  text-decoration: none;
-  text-underline-offset: 4px;
-  transition: all 0.15s ease-in-out;
-}
-
-.main__dialog-text-link:hover {
-  text-decoration: underline;
-}
-
-.main__dialog-button {
-  align-self: center;
-  border: 2px solid black;
+.main__tasks-list-item {
   border-radius: 12px;
   padding: 12px;
-  font-weight: 500;
-  font-size: 16px;
-  background-color: white;
-  transition: all 0.15s ease-in-out;
-}
-
-.main__dialog-button:hover {
-  color: #fff;
-  background-color: #000;
-  cursor: pointer;
+  font-size: 14px;
+  background-color: #f6f6f6;
 }
 
 .footer {
