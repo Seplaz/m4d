@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --color-egais: #2291ff;
+  --color-edo: #00bea2;
+  --color-eis: #366af3;
+  --color-chesznak: #f6f32e;
+  --color-fts: #26ad50;
+  --color-black: #333333;
+  --color-white: #ffffff;
+  --color-grey: #f2f2f2;
+}
+
+.page {
+  display: grid;
+  grid: 0.2fr 2fr 0.2fr / 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  margin: 0;
+  padding: 0;
+  color: var(--color-black);
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-white);
+  inline-size: 100vw;
+  block-size: 100dvh;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: header;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  border-block-end: 2px solid var(--color-grey);
+  padding: 24px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  user-select: none;
+}
+
+.header__logo-image {
+  inline-size: 32px;
+  block-size: 32px;
+}
+
+.header__logo-text {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 24px;
+}
+
+.header__nav-link {
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.header__nav-link:hover {
+  background-color: var(--color-grey);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+
+.main__description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: var(--color-grey);
+}
+
+.main__description-title {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.main__description-text {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.main__content {
+  background-color: var(--color-grey);
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.footer {
+  display: flex;
+  grid-area: footer;
+  justify-content: space-between;
+  align-items: center;
+  border-block-start: 2px solid var(--color-grey);
+  padding: 24px;
+}
+
+.footer__phone-number {
+  text-decoration: none;
+  text-underline-offset: 4px;
+  transition: text-decoration 0.15s ease-in-out;
+}
+
+.footer__phone-number:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: center;
+  }
+
+  .main__description-title {
+    font-size: 24px;
+  }
+
+  .main__description-text {
+    font-size: 16px;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    font-size: 12px;
+  }
+}
